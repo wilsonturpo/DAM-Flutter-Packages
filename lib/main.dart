@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
+import 'package:google_fonts/google_fonts.dart';
+
 
 void main() {
   runApp(MyApp());
@@ -83,14 +85,18 @@ class _MyHomePageState extends State<MyHomePage> {
           // horizontal).
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            
+            Text(
+              'Google Fonts: Goblin One',
+              style: GoogleFonts.getFont('Goblin One', fontSize: 20),            
+            ),
             Row(
               mainAxisSize: MainAxisSize.min,
               children: <Widget>[
                 const SizedBox(width: 20.0, height: 100.0),
                 const Text(
                   'Be',
-                  style: TextStyle(fontSize: 43.0),
+                  style: 
+                  TextStyle(fontSize: 43.0),        
                 ),
                 const SizedBox(width: 20.0, height: 100.0),
                 DefaultTextStyle(
